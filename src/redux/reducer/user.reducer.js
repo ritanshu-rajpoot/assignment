@@ -18,8 +18,8 @@ export const reducer = (state = initialState , action)=>{
         case userActionsTypes.GET_ALL_USER_SUCCESS:
             return {
                 ...state,
-                users:payload.data,
-                message: payload.message,
+                users:payload.usersinfo.data,
+                message: payload.usersinfo.message,
                 loading: false
             }
         case userActionsTypes.GET_ALL_USER_FAILURE:
@@ -27,6 +27,11 @@ export const reducer = (state = initialState , action)=>{
                 ...state,
                 errorMessage: payload,
                 loading: false
+            }
+        case userActionsTypes.ADD_USER_SUCCESS:
+            return {
+                ...state,
+                users: [...state.users,payload]
             }
         default : return state;
     }
