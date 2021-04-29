@@ -1,19 +1,25 @@
-# Getting Started with Create React App
+# HOW CAN RUN THIS PROJECT ON YOUR LOCAL
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+##system prerequisite
+###1. node v14.16.1 or above [click here to download](https://nodejs.org/en/download/)
+###2. git v2.31.1 or above [click here to download](https://git-scm.com/downloads)
+## Now follow these 3 steps
+###step-1 clone this repository
+##### clone this repository by running this command `git clone https://github.com/ritanshu-rajpoot/assignment.git`
+###Step-2 install the project dependencies
+#### change your working directory to project directory `cd assignment` and then install the project dependencies using the command `yarn install or npm install` after completion of this 
+####move to `server` folder of this project by using command `cd server` and again run the command `yarn install or npm install` because some dependencies are also there in this folder
+###Step-3 Now start this project
+####change your working directory to `assignment` and run the command `yarn start or npm start`
+####again your working directory to `server` folder and run the command `yarn start or npm start`
 
-## Available Scripts
-
-In the project directory, you can run:
-
-### `yarn start`
-
-Runs the app in the development mode.\
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-The page will reload if you make edits.\
+The page will reload if you make edit in the codebase.\
 You will also see any lint errors in the console.
 
+
+#Additional info
 ### `yarn test`
 
 Launches the test runner in the interactive watch mode.\

@@ -2,18 +2,16 @@ const express = require('express');
 const app = express();
 const cors = require('cors');
 const axios = require("axios")
-// configure cors
+
 app.use(cors());
 
 const hostname = '127.0.0.1';
 const port = 5000;
-// basic request
 
 app.get('/', (request , response) => {
     response.send(`Welcome to assignments`);
 });
 
-// router configuration
 app.get('/users',async (request,response)=>{
     try {
         let config = {
@@ -26,7 +24,6 @@ app.get('/users',async (request,response)=>{
             }
         };
         let result = await axios(config)
-        console.log(result.data.data)
         response.status(200).json({usersinfo : result.data});
     }catch (e) {
         response.status(200).json({error : e.message});
