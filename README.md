@@ -1,6 +1,6 @@
 # HOW CAN RUN THIS PROJECT ON YOUR LOCAL
 
-##system prerequisite
+## system prerequisite
 ### 1. node v14.16.1 or above [click here to download](https://nodejs.org/en/download/)
 ### 2. git v2.31.1 or above [click here to download](https://git-scm.com/downloads)
 ## Now follow these 3 steps
